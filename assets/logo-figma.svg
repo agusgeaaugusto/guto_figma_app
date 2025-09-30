@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 384">
+<path fill="#F24E1E" d="M128 0H64a64 64 0 000 128h64z"/>
+<path fill="#FF7262" d="M128 0h64a64 64 0 110 128h-64z"/>
+<path fill="#A259FF" d="M64 128a64 64 0 010-128"/>
+<path fill="#1ABCFE" d="M128 128h64a64 64 0 110 128h-64z"/>
+<path fill="#0ACF83" d="M64 256a64 64 0 1064 64v-64z"/>
+<path fill="#A259FF" d="M128 128H64a64 64 0 100 128h64z"/>
+</svg>

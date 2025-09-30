@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guto · Figma — App educativa</title>
+  <meta name="theme-color" content="#0b1020">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://www.youtube-nocookie.com">
+  <link rel="preconnect" href="https://i.ytimg.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="assets/logo-guto.svg" alt="Logo Guto" class="logo">
+      <div class="titles">
+        <h1>Guto · Figma</h1>
+        <p class="subtitle">Elaborado para los alumnos del <strong>3º curso de CEPPBO</strong></p>
+      </div>
+    </div>
+    <div class="credits">
+      <img src="assets/logo-figma.svg" alt="Figma" class="figma">
+      <span class="by">Proyecto App educativa · Desarrollado por <strong>José Agusto Dos Santos Gea</strong></span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Ruta de aprendizaje</h2>
+      <p class="muted">Videos seleccionados para entender Figma: fundamentos, animaciones, componentes y prototipos.</p>
+      <div class="toolbar">
+        <input id="q" class="input" placeholder="Buscar lección… (título, tags)">
+        <button id="order" class="btn ghost" aria-pressed="true" title="Cambiar orden">Orden: Lógico</button>
+      </div>
+    </section>
+
+    <section id="cards" class="cards"></section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2025 Guto · App educativa</small>
+    <a href="#" id="aboutLink">Acerca de</a>
+  </footer>
+
+  <!-- Modal -->
+  <dialog id="modal" class="modal">
+    <form method="dialog" class="modal__card">
+      <div class="modal__header">
+        <h3 id="mTitle">Título</h3>
+        <button class="icon" value="cancel" aria-label="Cerrar">✕</button>
+      </div>
+      <p class="muted" id="mMeta"></p>
+      <p id="mDesc"></p>
+      <div class="modal__actions">
+        <button id="play" class="btn">Ver ahora</button>
+        <a id="openYT" class="btn outline" target="_blank" rel="noopener">Abrir en YouTube</a>
+      </div>
+
+      <div class="player-wrap">
+        <div id="playerNotice" class="notice hidden">
+          La reproducción embebida fue bloqueada por YouTube (error 153).<br/>
+          Usa “Abrir en YouTube” para verlo, o prueba otro navegador.
+        </div>
+        <iframe id="player" title="YouTube player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="videos.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
